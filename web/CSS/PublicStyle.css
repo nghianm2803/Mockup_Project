@@ -1,0 +1,362 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 14, 2020, 8:23:09 AM
+    Author     : Admin
+*/
+
+/*Parent Style*/
+html, body{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: Verdana,sans-serif;
+    min-width: 60%;
+}
+p{
+    margin: 0;
+    display: inline;
+}
+
+/*Header Style*/
+.header{
+    overflow: hidden;
+    background-color: #F8F8F8;
+    padding: 1em;
+}
+
+/*User login Style*/
+.topnav-right {
+    float: right;
+    color: #338dcd;
+}
+.topnav-right a{
+    text-decoration: none;
+    color: #338dcd;
+    padding-left: 2em;
+}
+
+/*Title Style*/
+.top{
+    display: inline;
+    color:#5e5e5e;
+    font-size: 18px;
+}
+
+/*Sidebar Style*/
+.sidebar {
+    color: #338DCD;
+    height: 100%;
+    width: fit-content;
+    background-color: #F8F8F8;
+    overflow-x: hidden;
+    position: relative;
+    float: left;
+    border-right: 1.5px solid #e7e7e7;
+}
+
+/*Sidebar option Style*/
+.employee, .carmanager, .bookingmanager, .parkingmanager, .tripmanager, .ticketmanager{
+    font-size: 15px;
+    color: #338DCD;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    padding: 1em 0 1em 1em;
+    font-family: Verdana,sans-serif;
+    transition: 0.2s;
+}
+
+.border_boxing{
+    border-bottom: 1.5px solid #e7e7e7;
+}
+
+.sidebar a:hover, .employee:hover, .carmanager:hover, .bookingmanager:hover, .parkingmanager:hover, .tripmanager:hover, .ticketmanager:hover{
+    background-color: #eeeeee;
+}
+
+/*Dropdown container Style*/
+.dropdown-employee, .dropdown-carmanager, .dropdown-bookingmanager, .dropdown-parkingmanager, .dropdown-tripmanager, .dropdown-ticketmanager{
+    overflow: hidden;
+    max-height: 0;
+    background-color: #F8F8F8;
+    vertical-align: middle;
+    transition: all 0.1s ease-in-out;
+}
+
+.sidebar a {
+    padding: 1em 0 1em 2.5em;
+    font-size: 15px;
+    text-decoration: none;
+    color: #338DCD;
+    display: block;
+}
+
+.show{
+    max-height: 200px;
+}
+
+/*Contract deadline Style*/
+.groupdate{
+    height: 25px;
+    width: 240px;
+    display: inline-flex;
+}
+.btndate{
+    padding-left: 5px;
+    text-align: left;
+    height: 25px;
+    width: 110px;
+}
+#date{
+    width: 160px;
+}
+
+/*Icon Style*/
+.sidebar fas fa-tachometer-alt,fas fa-list-ul,fas fa-plus{
+    float: left;
+    vertical-align: middle;
+}
+.fas, .fa{
+    padding-right: 0.3em;
+}
+
+.fa-angle-left {
+    margin-left: 2em;
+    float:right;
+    width: 9.375px;
+    transition: all .1s linear;
+}
+.fa-angle-left.down {
+    transform:rotate(-90deg);
+}
+
+/*Content Style*/
+.main{
+    display: grid;
+    padding: 2.5em;
+    border-top: 1.5px solid #e7e7e7;
+}
+
+/*Content header Style*/
+.main h2{
+    border-bottom: 1px solid gainsboro;
+    text-align: left;
+    margin: 0 0 0.75em 0;
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+/* Search bar style*/
+.search-container{
+    margin-left: 40%;
+    margin-bottom: 15px;
+    float: left;
+}
+.search-container .fas fa-filter{
+    padding: 2px;
+    text-align: center;
+}
+
+/* Search bar style */
+.btnsearch{
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: #EEEEEE;
+}
+.searchbar{
+    width: 260px;
+    height: 30px;
+    border: none;
+}
+.groupsearch{
+    height: 36px;
+    border:1px solid #CCCCCC;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Filter bar style*/
+.btnfilterby{
+    width: 90px;
+    height: 36px;
+    border: none;
+    background-color: #EEEEEE;
+}
+.selectfilter{
+    width: 100px;
+    height: 36px;
+    border: none;
+}
+.groupfilterby{
+    border:1px solid #CCCCCC;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Table search style*/
+.tablesearch table{
+    width: 100%;
+    border: 1px solid black;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.tablesearch td, .tablesearch th{
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+}
+.tablesearch th{
+    background-color: #EEEEEE;
+}
+.tablesearch a{
+    color: blue;
+}
+.tablesearch a:hover{
+    color:#0072ff;
+}
+
+/*Content table Style*/
+.tableadd input{
+    box-sizing: border-box;
+    width: 100%;
+}
+.tableadd input[type=radio]{
+    width: auto;
+}
+.tableadd select{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Content table size Style*/
+.tableadd th,.tableadd td{
+    text-align: left;
+    width: 15em;
+}
+/*Form button Style*/
+.back,.reset,.add,.cancel,.update,.delete{
+    width: content-box;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+/* Button search style*/
+#search{
+    width: 70px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #5BC0DE;
+    color: white;
+    border-style: none;
+    padding: auto;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.back:hover,.reset:hover,.add:hover,.cancel:hover,.update:hover,.delete:hover,#search:hover{
+    opacity: 0.8;
+}
+.back{
+    background-color: #5BC0DE;
+}
+.reset{
+    background-color: #F0AD4E;
+}
+.add{
+    background-color: #5CB85C;
+}
+.cancel{
+    background-color: #00BCD4;
+}
+.update{
+    background-color: #28a745;
+}
+.delete{
+    background-color: #dc3545;
+}
+
+/*Requirement red tick Style*/
+#tick_null{
+    display: inline;
+    color:red;
+}
+
+/*Error display Style*/
+.error{
+    color:red;
+    white-space: nowrap; 
+}
+
+.has-error{
+    border-color: red;
+}
+
+/*Pagination Style*/
+
+/*Outside div of pagination button*/
+.dataTables_wrapper .dataTables_paginate {
+    color: #333;
+    border: 1px solid #dcdcdc;
+    margin-top: 1em;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+/*Button when not active: previous/active btn when reached end of table*/
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+    cursor: default;
+    color: #666 !important;
+    border: 1px solid transparent;
+    background: transparent;
+    box-shadow: none;
+}
+
+/*Default style of button*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #333 !important;
+    border: 1px solid transparent;
+}
+
+/*Button when hover to*/
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    color:white !important;
+    background-color:#72afe3;
+}
+
+/*Button when clicked on*/
+.dataTables_wrapper .dataTables_paginate .paginate_button:active{
+    outline:none;
+    background-color:#337ab7;
+}
+
+/*Button in active state*/
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: white !important;
+    background-color: #337ab7;
+}

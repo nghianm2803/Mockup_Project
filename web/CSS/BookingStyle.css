@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17-Aug-2020, 11:19:15
+    Author     : Computer
+*/
+
+/*---------------------------Add Car------------------------------------------*/
+
+/*Sidebar option Style*/
+.sidebar a, .carmanager, .bookingmanager, .parkingmanager {
+    font-size: 15px;
+    text-decoration: none;
+    color: #338DCD;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    margin: 0 0 1.5em 0;
+    padding: 0;
+    font-family: Verdana,sans-serif;
+    transition: 0.2s;
+}
+
+.sidebar a:hover, .carmanager:hover, .bookingmanager:hover, .parkingmanager:hover{
+    opacity: 0.6;
+}
+
+/*Dropdown container Style*/
+.dropdown-carmanager, .dropdown-bookingmanager, .dropdown-parkingmanager {
+    overflow: hidden;
+    max-height: 0;
+    background-color: #F8F8F8;
+    padding-left: 1.5em;
+    vertical-align: middle;
+    transition: all 0.1s ease-in-out;
+}
+
+/*Contract deadline Style*/
+.groupdate{
+    height: 25px;
+    width: 240px;
+    display: inline-flex;
+}
+.btndate{
+    padding-left: 5px;
+    text-align: left;
+    height: 25px;
+    width: 110px;
+}
+#date{
+    width: 160px;
+}
+
+.show{
+    max-height: 200px;
+}
